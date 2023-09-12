@@ -1,9 +1,10 @@
+#include <ctime>    
     double saldo = 1000;
 
-ContaCliente() {
+ContaCliente agenciaconta() {
     srand(time(nullptr));
-    agencia = 10000 + rand()%50000 + 1;
-    conta = 10000 + rand() %50000 + 1;
+    int agencia = 10000 + rand()%50000 + 1;
+    int conta = 10000 + rand() %50000 + 1;
 }
 
 void ConsultaSaldo(){
