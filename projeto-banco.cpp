@@ -13,6 +13,7 @@ struct ContaCliente
     string email;
     int agencia;
     int conta;
+    double saldo;
 };
 
 int menu (){
@@ -48,6 +49,29 @@ ContaCliente cadastraCliente() {
     return conta; 
 
 }
+
+ContaCliente agenciaconta() {
+    srand(time(nullptr));
+    int agencia = 10000 + rand()%50000 + 1;
+    int conta = 10000 + rand() %50000 + 1;
+}
+
+void ConsultaSaldo(){
+    cout << "Agência: " << agencia << endl;
+    cout << "Conta: " << conta << endl;
+    cout << "Saldo: R$" << saldo << endl;
+}
+
+
+void sacar (){
+    if (saldo >= ){
+        saldo -= ;
+        cout << "Saque de R$ " << valor << "Realizado com Sucesso! " << endl;
+    } else {
+        cout << "Saldo insuficiente para realizar o saque. " << endl;
+    }
+    cout << "Seu novo saldo é: R$ " << saldo <<endl;
+    }
 
 int main(){
 
