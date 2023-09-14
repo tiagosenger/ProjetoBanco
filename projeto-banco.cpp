@@ -62,6 +62,14 @@ void ConsultaSaldo(){
     cout << "Saldo: R$" << saldo << endl;
 }
 
+int deposito(double saldo){
+    double valor;
+   cout << "Informe o valor a ser depositado: " << endl;
+   cin >> valor;
+   saldo = saldo + valor;
+   cout << "Saldo atualizado: " << saldo << endl;
+    return saldo;
+} 
 
 void sacar (){
     if (saldo >= ){
@@ -86,13 +94,15 @@ int escolha;
         break;
     case 2: 
         cout << "Opção escolhida: Deposito" << endl;
-        //deposito (1000);  teste da funcao deposito
+        deposito (saldo);
         break;
     case 3:
-        cout << "Opção escolhida: Saque";
+        cout << "Opção escolhida: Saque" << endl;
+        sacar (saldo);
         break;
     case 4:
-        cout << "Opção escolhida: Extrato";
+        cout << "Opção escolhida: Extrato" << endl;
+        ConsultaSaldo(saldo);
         break;
     
     default:

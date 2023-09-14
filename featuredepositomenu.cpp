@@ -1,10 +1,5 @@
-int deposito(double saldo/*ContaCliente conta*/){
+int deposito(double saldo){
     double valor;
-  
-   /*cout << "Informe a agencia (5 digitos): " << endl;
-   cin >> conta.agencia; 
-   cout << "Informe a conta (6 digitos): " << endl;
-   cin >> conta.conta;*/
    cout << "Informe o valor a ser depositado: " << endl;
    cin >> valor;
    saldo = saldo + valor;
